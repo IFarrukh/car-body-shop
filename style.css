@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@800&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	background-image: url(./img/car.jpg);
+	min-height: 100vh;
+	background-position: center center;
+	background-size: cover;
+	flex-direction: column;
+	color: white;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+nav .logo {
+	font-size: 2rem;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+nav li {
+}
+
+nav li .underline {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px;
+	font-size: 18px;
+}
+
+nav li .underline:after {
+	content: '';
+	position: absolute;
+	background-color: #00c2ff;
+	letter-spacing: 0.5px;
+	height: 2px;
+	width: 0%;
+	left: 0;
+	bottom: -5px;
+	transition: 0.3s;
+}
+
+nav li .underline:hover::after {
+	width: 100%;
+}
+
+.highlight {
+	background-color: #00c2ff;
+	color: #fff;
+	text-decoration: none;
+	padding: 1rem;
+	font-size: 18px;
+}
